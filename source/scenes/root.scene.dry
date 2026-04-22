@@ -32,7 +32,7 @@ on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
-Q.year = 1928;
+Q.year = 2010;
 Q.month = 1;
 Q.week = 0;
 Q.week_checked = 0;
@@ -1550,4 +1550,4 @@ new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 
-= 1928
+= 2010
