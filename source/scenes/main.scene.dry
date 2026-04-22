@@ -1281,8 +1281,6 @@ max-cards: 3
 - @party
 - @govt
 - @eco
-- @time
-- @time_2
 - #advisor
 - @shuffle_leadership_pinned
 
@@ -2065,8 +2063,6 @@ max-cards: 4
 - @party
 - @govt
 - @eco
-- @time
-- @time_2
 - #advisor
 - @shuffle_leadership_pinned
 
