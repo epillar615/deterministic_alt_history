@@ -576,13 +576,13 @@ Loyalty: [+ prussian_police_loyalty : loyalty +]
 @factions
 go-to: neorevisionists if neorevisionism > 0; menu if neorevisionism <= 0
 
-**Internal factions of the** <span style="color: #c00000;">**SPD**</span>
+**Internal factions of the** <span style="color: #FFC000;">**Lib Dems**</span>
 
 Overall dissent: [+ dissent_percent : dissent +]
 
 **Left**
 
-Many leftists are former members of the <span style="color: #D47B9B;">**USPD**</span> (the left-wing, anti-war <span style="color: #D47B9B;">Independent Social Democratic Party</span>), or are young radicals. Many are interested in closer cooperation with the <span style="color: #700000;">**KPD**</span>, and some support extra-parliamentary action.
+The left of the party represent those who advocate for a strategy of outflanking New Labour on the left. Many are former members of the <span style="color: #D47B9B;">**SDP**</span> (the left-wing, anti-war <span style="color: #D47B9B;">Social Democratic Party</span>), or are young radicals.
 
 Strength: [+ left_strength : strength +]
 
