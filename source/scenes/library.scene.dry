@@ -9,7 +9,7 @@ Herein contains relevant information about the government and politics of the Un
 
 @menu
 
-- @government: Britain's system of government
+- @britishgovernment: Britain's system of government
 - @weimar_timeline: Timeline of the Weimar Republic before 1928
 - @curr_gov: Current government details
 - @demographics: Demographics
@@ -20,18 +20,18 @@ Herein contains relevant information about the government and politics of the Un
 - @figures: Figures and charts
 - @backSpecialScene: Exit library.
 
-@government
+@britishgovernment
 go-to: menu
 
 The United Kingdom is a constitutional monarchy with a parliamentary democracy operating under the so-called "Westminster System". Parliament is responsible for governing, while the monarch has a largely ceremonial role.
 
 The Houses of Parliament consist of the elected House of Commons and the unelected House of Lords. In practical terms political power lies with the Commons, the Lords retaining only the power to temporarily delay the passage of legislation.
 
-The Reichstag is elected based on a proportional representation system, giving parties seats roughly proportional to their vote share in each electoral district. The Reichstag then elects the Chancellor and the cabinet by a majority vote, who are responsible for government. A majority vote-of-no-confidence can remove the current government.
+The House of Commons is elected based on a First Past the Post system, where the candidate receiving the most votes in their constituency gains that seat. The Prime Minister is the head of government and holds office by virtue of their ability to command the confidence of the House of Commons; in other words, through the support of a majority of the elected Members of Parliament (MPs). A majority vote-of-no-confidence can remove the current Prime Minister.
 
-The President is elected by a national direct vote, in two rounds. The second round is used if the first round does not result in a majority for one candidate; the candidate who receives a plurality in the second round becomes president (there is no obligation for weaker candidates to drop out). The role of the president is mostly to represent Germany, but he also has some crucial governing powers. The president and chancellor can together use emergency decrees to govern, bypassing the Reichstag. The president can also appoint or remove a chancellor when a parliamentary majority is unable to be established, and can thus influence the formation of a government.
+Queen Elizabeth II is the current monarch of the United Kingdom, having reigned since the death of her father in 1952. The Queen is also head of state of numerous other realms and territories. Succession is via male-preference primogeniture, with her son Charles, Prince of Wales, next in line. The monarchy, and the reign of Queen Elizabeth II in particular, retains strong popular support in the UK. The role of the monarch is mostly to represent Britain and the Commonwealth. The monarch theoretically retains limited executive powers, which are in practice enacted only on the advice of the Prime Minister and elected government.
 
-Germany is divided into a number of states, each of which have their own governments with some responsibilities. By far the largest and most important state is Prussia.
+The United Kingdom is a union of the four "home nations" (England, Scotland, Wales and Northern Ireland), as well as other minor territories. Scotland, Wales and Northern Ireland have their own devolved local governments with varying degrees of power and responsibility. These will be simulated in a later update.
 
 @weimar_timeline
 go-to: menu
