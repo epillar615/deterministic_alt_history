@@ -10,7 +10,7 @@ Herein contains relevant information about the government and politics of the Un
 @menu
 
 - @britishgovernment: Britain's system of government
-- @weimar_timeline: Timeline of the Weimar Republic before 1928
+- @uk_timeline: Brief timeline of the United Kingdom 1945-2010
 - @curr_gov: Current government details
 - @demographics: Demographics
 - @parties: Parties
@@ -33,14 +33,14 @@ Queen Elizabeth II is the current monarch of the United Kingdom, having reigned 
 
 The United Kingdom is a union of the four "home nations" (England, Scotland, Wales and Northern Ireland), as well as other minor territories. Scotland, Wales and Northern Ireland have their own devolved local governments with varying degrees of power and responsibility. These will be simulated in a later update.
 
-@weimar_timeline
+@uk_timeline
 go-to: menu
 
-= Timeline of the SPD and the Republic (until 1928)
+= Brief Timeline of the UK 1945-2010
 
-**1875**: The SPD is formed as a merger of the General German Workers' Association, founded by Ferdinand Lassalle, and the Social Democratic Workers' Party of Germany, led by Wilhelm Liebknecht and August Bebel. Eventually, the SPD grows to become the largest party in the German Empire.
+**1945**: The UK is one of the victorious powers of the second world war, granting it status as one of the five permanent members of the United Nations Security Council. Beginning of the political "post-war consensus" to rebuild, focusing on Keynesian economics and a strong welfare state.
 
-**1914**: The Great War begins. The SPD votes in favor of war credits, with substantial internal dissent. This begins a policy of *Burgfriedenspolitik*, a general peace between all political parties and trade unions.
+**1914**: 
 
 **1917**: The USPD, a left-wing anti-war split from the SPD, is formed.
 
