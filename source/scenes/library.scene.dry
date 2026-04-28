@@ -64,6 +64,42 @@ go-to: menu
 
 **1969**: New discoveries lead to renewed British interest in North Sea oil, especially in Scottish territorial waters.
 
+**1972**: While no date marks the precise beginning of the Troubles, the conflict is intensified following *Bloody Sunday* - the killing of 13 unarmed civilians by the British Army on the 30th January of this year (with one additional death from wounds months later).
+
+**1973**: The UK joins the European Common Market, the predecessor to the European Union (EU).
+
+**1974**: Due to electricity shortages caused by pay disputes among coal miners a 3-day work week is briefly introduced.
+
+**1975**: A referendum is held on membership of the European Common Market, with 67% voting for the UK to stay a member.
+
+**1978**: Beginning of the so-called *Winter of Discontent*, with a combination of worker strikes, political misteps and a particularly cold winter damaging the reputation of the incumbent Labour party.
+
+**1979**: Leader of the Conservative party *Margret Thatcher* brings a vote of no confidence in the Labour government, which passes by a single vote. Thatcher becomes Prime Minister following the subsequent general election, breaking with the post-war consensus and taking the country economically to the right. Lord Mountbatten, cousin of Queen Elizabeth II, is assassinated by the *Irish Republican Army* (IRA) paramilitary group.
+
+**1980**: With the election of *Michael Foot* as party leader, the Labour party experiences a leftward shift in its politics.
+
+**1981**: The *SDP-Liberal Alliance* is established, an electoral pact between the Liberal party and Social Democratic party which aims to exploit the gap in the centre of British politics which has arisen following the leftward and rightward shifts of the Labour and Conservative parties respectively. British Aerospace (later BAE systems) is privatised.
+
+**1982**: Argentina occupies the Falkland Islands, but is defeated in 10 weeks by the British military. The quick and dominant British victory sees a boost to Thatcher's re-election campaign the following year.
+
+**1984**: Conservative MP Sir Anthony Berry is killed in an IRA assassination attempt against Margret Thatcher. British Telecom is privatised.
+
+**1985**: After almost a year the miner's strike ends with a decisive victory for the Conservative government. The weakness of the trade unions was exposed, and their ability to compel changes in policy reduced.
+
+**1986**: British gas is privatised.
+
+**1987**: British Petroleum (BP), British Airways and Rolls-Royce are privatised.
+
+**1988**: British Steel is privatised. The Liberal Democrats form as a merger of the Liberal and Social Democratic Party.
+
+**1989**: Water and sewage systems are privatised in England and Wales. Yes, really, Thatcher even privatised drinking water. Nowhere else in the world has fully privatised this.
+
+**1990**: Privatisation of electricty generation and the national grid. Opposition to the implementation of a flat rate tax for funding local councils known as the *poll tax* sparks the poll tax riots. Thatcher loses an internal Conservative party vote and is replaced by John Major as Prime Minister.
+
+**1994**: Privatisation of British Rail begins. Labour leader *John Smith* dies of a heart attack and is replaced by *Tony Blair*. Blair rebrands the Labour party under the *New Labour* slogan, moving party policy more towards free market policies and away from socialist ideas.
+
+**1997**: The Labour party under Tony Blair win a general election, ending 18 years of consecutive Conservative government.
+
 @curr_gov
 go-to: cabinet if ld_in_government; menu if not ld_in_government
 
@@ -71,11 +107,9 @@ go-to: cabinet if ld_in_government; menu if not ld_in_government
 
 Monarch: [? if monarch == "Elizabeth II": <span style="color: #000000;">Elizabeth II</span> ?]
 
-Prime Minister: [? if chancellor_party == "SPD": <span style="color: #c00000;">[+ chancellor +]</span>?][? if chancellor_party == "Z": <span style="color: #000000;">[+ chancellor +]</span>?][? if chancellor_party == "NSDAP": <span style="color: #7A3C00;">[+ chancellor +]</span>?][? if chancellor_party == "DSU": <span style="color: #6A1E1E;">[+ chancellor +]</span>?][? if chancellor_party == "KPD": <span style="color: #700000;">[+ chancellor +]</span>?][? if chancellor_party == "DNVP": <span style="color: #3E88B3;">[+ chancellor +]</span>?][? if (chancellor == "Schleicher" and not dnef_formed) or chancellor == "Papen": <span style="color: #808080;">[+ chancellor +]</span>?][? if (chancellor == "Schleicher" or chancellor == "Goerdeler" or chancellor == "Bredow") and dnef_formed: <span style="color: #BFC8CC;">[+ chancellor +]</span>?][? if chancellor == "Goerdeler" and not dnef_formed: <span style="color: #808080;">[+ chancellor +]</span>?] [? if chancellor_party == "Z":(<span style="color: #000000;">**[+ z_party_name +]**</span>) ?][? if chancellor_party == "SPD":(<span style="color: #FFC000;">**Lib Dems**</span>) ?][? if chancellor_party == "KPD":(<span style="color: #700000;">**KPD**</span>) ?][? if chancellor_party == "DNVP": <span style="color: #3E88B3;">**DNVP**</span>?][? if chancellor_party == "DSU":(<span style="color: #6A1E1E;">**DSU**</span>) ?][? if chancellor_party == "NSDAP":(<span style="color: #7A3C00;">**NSDAP**</span>) ?][? if chancellor_party == "I":(<span style="color: #808080;">I</span>) ?][? if chancellor_party == "DNEF":(<span style="color: #BFC8CC;">**DNEF**</span>) ?]
+Prime Minister: [? if chancellor_party == "LAB": <span style="color: #E4003B;">[+ chancellor +]</span>?][? if chancellor_party == "CON": <span style="color: #0087DC;">[+ chancellor +]</span>?][? if chancellor_party == "LD": <span style="color: #FFC000;">[+ chancellor +]</span>?]
 
-Prussian Minister-President: [? if prussia_leader = "Braun" and (chancellor != nsdap_chancellor or (rubicon_mini and not game_over)): <span style="color: #c00000;">Braun</span> (<span style="color: #FFC000;">**Lib Dems**</span>)?][? if prussia_leader = "Rosenfeld" and not sapd_formed and (chancellor != nsdap_chancellor or (rubicon_mini and not game_over)): <span style="color: #c00000;">Rosenfeld</span> (<span style="color: #FFC000;">**Lib Dems**</span>)?][? if prussia_leader = "Rosenfeld" and sapd_formed and (chancellor != nsdap_chancellor or (rubicon_mini and not game_over)): <span style="color: #9B0000;">Rosenfeld</span> (<span style="color: #9B0000;">**SAPD**</span>)?][? if prussia_leader = "Stegerwald" and (chancellor != nsdap_chancellor or (rubicon_mini and not game_over)): <span style="color: #000000;">Stegerwald</span> (<span style="color: #000000;">**[+ z_party_name +]**</span>)?][? if prussia_leader = "Brüning" and (chancellor != nsdap_chancellor or (rubicon_mini and not game_over)): <span style="color: #000000;">Brüning</span> (<span style="color: #000000;">**[+ z_party_name +]**</span>)?][? if prussia_leader = "Luther" and (chancellor != nsdap_chancellor or (rubicon_mini and not game_over)) and not lvp_formed and dvp_exist: <span style="color: #C0A054;">Luther</span> (<span style="color: #C0A054;">**DVP**</span>)?][? if prussia_leader = "Luther" and (chancellor != nsdap_chancellor or (rubicon_mini and not game_over)) and not lvp_formed and not dvp_exist: <span style="color: #D3C24D;">Luther</span> (<span style="color: #D3C24D;">**DVP**</span>)?][? if prussia_leader = "Luther" and (chancellor != nsdap_chancellor or (rubicon_mini and not game_over)) and lvp_formed: <span style="color: #FFCC00;">Luther</span> (<span style="color: #FFCC00;">**LVP**</span>)?][? if prussia_leader = "Goring": <span style="color: #7A3C00;">Göring</span> (<span style="color: #7A3C00;">**NSDAP**</span>)?][? if (prussia_leader = "Papen" or (chancellor == nsdap_chancellor and (not rubicon_mini or game_over)) and not prussia_leader == "Goring") and started: <span style="color: #808080;">Papen</span> (<span style="color: #808080;">I</span>)?][? if prussia_leader = "Schleicher" and (chancellor != nsdap_chancellor or (rubicon_mini and not game_over)): [? if not dnef_formed: <span style="color: #808080;">Schleicher</span>?][? if dnef_formed: <span style="color: #BFC8CC;">Schleicher</span>?] ([? if not dnef_formed: <span style="color: #808080;">I</span>?][? if dnef_formed: <span style="color: #BFC8CC;">**DNEF**</span>?])?][? if prussia_leader = "Goerdeler" and (chancellor != nsdap_chancellor or (rubicon_mini and not game_over)): <span style="color: #808080;">Goerdeler</span> (<span style="color: #808080;">I</span>)?][? if prussia_leader = "Strasser" and (chancellor != nsdap_chancellor or (rubicon_mini and not game_over)): <span style="color: #6A1E1E;">Strasser</span> (<span style="color: #6A1E1E;">**DSU**</span>)?][? if prussia_leader = "joavig" and (chancellor != nsdap_chancellor or (rubicon_mini and not game_over)): <span style="color: #700000;">joavig</span> (<span style="color: #7A3C00;">**NSDAP**</span>)?]
-
-Reichstag composition:
+Commons composition:
 
 # 1928: 30, 1930: 25, 1932: 22
 
@@ -478,7 +512,7 @@ go-to: menu
 
 <span style="color: #FFC000;">**Lib Dems**</span> - *Liberal Democrats* - this is us. We are a liberal and democratic party. We are the heirs of the liberal party and of the philosophy of John Stuart Mill. We are the foremost defenders of individual liberty, and we seek to break the two-party system that has dominated British politics under the First Past the Post (FPTP) electoral system. The modern <span style="color: #FFC000;">**Lib Dems**</span> were formed from a merger of the <span style="color: #FFD700;">**Liberal Party**</span> and the <span style="color: #6C2f56;">**Social Democratic Party**</span>, which split from the <span style="color: #E4003B;">**Labour Party**</span> in 1981.
 
-<span style="color: #E4003B;">**Labour**</span> - *Labour Party* - a centre-left party of democratic socialists, social democrats and trade unionists. They replaced the old <span style="color: #FFD700;">**Liberal Party**</span> as one of the two main political parties in the interwar period. They have been in an electoral alliance with the <span style="color: #3F1D70;">**Co-operative Party**</span> since 1927, which for all intents and purposes is part of the Labour party. [? if (year >= 2015) and lab_leader == "Corbyn": They have appeared to take a more leftist turn recently, under the party leader, Jeremy Corbyn. ?]
+<span style="color: #E4003B;">**Labour**</span> - *Labour Party* - a centre-left party of democratic socialists, social democrats and trade unionists. They overtook the old <span style="color: #FFD700;">**Liberal Party**</span> as one of the two main political parties in the interwar period. They have been in an electoral alliance with the <span style="color: #3F1D70;">**Co-operative Party**</span> since 1927, which for all intents and purposes is part of the Labour party. [? if (year >= 2015) and lab_leader == "Corbyn": They have appeared to take a more leftist turn recently, under the party leader, Jeremy Corbyn. ?]
 
 Current relations: [+ lab_relation : relationships +]
 
@@ -490,7 +524,7 @@ Current relations: [+ con_relation : relationships +]
 
 Current relations: [+ snp_relation : relationships +]
 
-<span style="color: #FDF38E;">**Plaid**</span> - *Plaid Cymru* (Party of Wales) - a centre-left party of Welsh nationalists and social democrats. Welsh independence from the UK has had less public support than in Scotland, and consequently more moderate goals of limited self-governance within the UK have been grudingly accepted as the practical limits of the party by some. Despite this, the party continues to officially support full independence.
+<span style="color: #008672;">**Plaid**</span> - *Plaid Cymru* (Party of Wales) - a centre-left party of Welsh nationalists and social democrats. Welsh independence from the UK has had less public support than in Scotland, and consequently more moderate goals of limited self-governance within the UK have been grudingly accepted as the practical limits of the party by some. Despite this, the party continues to officially support full independence.
 
 Current relations: [+ pld_relation : relationships +]
 
@@ -502,7 +536,7 @@ Current relations: [+ ukip_relation : relationships +]
 
 Current relations: [+ grn_relation : relationships +]
 
-<span style="color: #2e3b74;">**BNP**</span> - *British National Party* - a far-right party with fascist origins. Under the leadership of Nick Griffin it has sort to present a slightly more moderate guise, while critics argue it remains a fundamentally fascist organization. Under FPTP they have yet to gain a single parliamentary seat.
+<span style="color: #2e3b74;">**BNP**</span> - *British National Party* - a far-right party with fascist origins. Under the leadership of Nick Griffin it has sought to present a slightly more moderate guise, while critics argue it remains a fundamentally fascist organization. Under FPTP they have yet to gain a single parliamentary seat.
 
 Current relations: [+ bnp_relation : relationships +]
 
