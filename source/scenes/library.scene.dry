@@ -476,51 +476,39 @@ go-to: menu
 @parties
 go-to: menu
 
-[? if dnef_formed: <span style="color: #BFC8CC;">**DNEF**</span> - <i>Deutschnationale Einheitsfront</i> (German National Unity Front) - A "presidential" party founded by Chancellor Kurt von Schleicher and his allies, this movement embraces a syncretic ideology that defies easy categorization within the political spectrum. At its core, it is built on militarism, nationalism, and corporatism. The party garners support from urbanites, blue-collar workers, the middle classes, and even some of the unemployed, all united by their shared loyalty to the chancellor. ?]
-
-[? if dnef_formed: Current relations: [+ dnef_relation : relationships +] ?]
-
 <span style="color: #FFC000;">**Lib Dems**</span> - *Liberal Democrats* - this is us. We are a liberal and democratic party. We are the heirs of the liberal party and of the philosophy of John Stuart Mill. We are the foremost defenders of individual liberty, and we seek to break the two-party system that has dominated British politics under the First Past the Post (FPTP) electoral system. The modern <span style="color: #FFC000;">**Lib Dems**</span> were formed from a merger of the <span style="color: #FFD700;">**Liberal Party**</span> and the <span style="color: #6C2f56;">**Social Democratic Party**</span>, which split from the <span style="color: #E4003B;">**Labour Party**</span> in 1981.
 
-<span style="color: #E4003B;">**Labour**</span> - *Labour Party* - a center-left party of democratic socialists, social democrats and trade unionists. They replaced the old <span style="color: #FFD700;">**Liberal Party**</span> as one of the two main political parties in the interwar period. They have been in an electoral alliance with the <span style="color: #3F1D70;">**Co-operative Party**</span> since 1927, which for all intents and purposes is part of the Labour party. [? if (year >= 2015) and lab_leader == "Corbyn": They have appeared to take a more leftist turn recently, under the party leader, Jeremy Corbyn. ?]
+<span style="color: #E4003B;">**Labour**</span> - *Labour Party* - a centre-left party of democratic socialists, social democrats and trade unionists. They replaced the old <span style="color: #FFD700;">**Liberal Party**</span> as one of the two main political parties in the interwar period. They have been in an electoral alliance with the <span style="color: #3F1D70;">**Co-operative Party**</span> since 1927, which for all intents and purposes is part of the Labour party. [? if (year >= 2015) and lab_leader == "Corbyn": They have appeared to take a more leftist turn recently, under the party leader, Jeremy Corbyn. ?]
 
 Current relations: [+ lab_relation : relationships +]
 
-[? if not lvp_formed: [? if started: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if not started: <span style="color: #D3C24D;">**DDP**</span> ?] - [? if ddp_name == "DDP" or not ddp_name: <i>Deutsche Demokratische Partei</i> (German Democratic Party)?][? if ddp_name == "DStP": <i>Deutsche Staatspartei</i> (German State Party)?] - [? if ddp_name == "DDP" or not ddp_name: a left-liberal party, popular among the intelligentsia and educated middle class. Although, they have been shifting towards the right over the years. They have often been in coalitions with us. ?][? if ddp_name == "DStP": a liberal party, waning in popularity among the intelligentsia and middle class. [? if dstp_collapsed == 0: They have shifted considerably to the right in recent years and have merged with the political wing of the mildly antisemitic Young German Order in an effort to revive their party.?][? if dstp_collapsed == 1: They have shifted considerably to the right in recent years and have merged with the political wing of the mildly antisemitic Young German Order in an effort to revive their party. Furthermore, the Young German Order has broken off, essentially just leaving the <span style="color: #D3C24D;">**DDP**</span> with a different name.?] They have often been in coalitions with us. ?] ?]
+<span style="color: #0087DC;">**Conservative**</span> - *Conservative and Unionist Party* - a centre-right party, also known as the *Tories*. They are the oldest and historically the most succesful party in British politics, sometimes termed the *natural party of government*. The Tories appeal to a broad range of ideologies across the right-wing of British politics, from traditional conservative voices to neoliberal *Thatcherites* to one-nation tories. In particular there is significant internal division regarding the nature of the relationship Britain ought to have with the European Union, with pro and anti EU factions.
 
-[? if not lvp_formed: Current relations: [+ ddp_relation : relationships +] ?]
+Current relations: [+ con_relation : relationships +]
 
-[? if not lvp_formed and dvp_exist: <span style="color: #C0A054;">**DVP**</span> - <i>Deutsche Volkspartei</i> (German People's Party) - a conservative-liberal party founded by Gustav Stresemann, supported by the middle classes, bourgeoisie and industrialists. The industrial and right wing of the party has been gaining noticeable influence in recent years with Stresemann's neglect of party affairs. [? if dvp_ideology == "Right": The industrial wing of the party has succeeded in it's takeover of the party and are much less inclined to work with us.?] We have occasionally been in coalitions. ?]
+<span style="color: #FDF38E;">**SNP**</span> - *Scottish National Party* - a centre-left party of Scottish nationalists and social democrats. The <span style="color: #FDF38E;">**SNP**</span> campaigns in favour of independence from the United Kingdom. They only field candidates in Scottish constituencies. This concentration of vote share over a small share of UK parliament seats gives them an advantage over parties with a similar national vote share distributed over the whole country, due to the FPTP electoral system.
 
-[? if not lvp_formed and dvp_exist: Current relations: [+ dvp_relation : relationships +] ?]
+Current relations: [+ snp_relation : relationships +]
 
-[? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span> - <i>Liberale Volkspartei</i> (Liberal People's Party) - a liberal party, popular among the bourgeois and the middle class. Formed from a merger of the two former liberal parties, the left-liberal <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and conservative-liberal <span style="color: #C0A054;">**DVP**</span>. Its predecessors have often been in coalitions with us. ?]
+<span style="color: #FDF38E;">**Plaid**</span> - *Plaid Cymru* (Party of Wales) - a centre-left party of Welsh nationalists and social democrats. Welsh independence from the UK has had less public support than in Scotland, and consequently more moderate goals of limited self-governance within the UK have been grudingly accepted as the practical limits of the party by some. Despite this, the party continues to officially support full independence.
 
-[? if lvp_formed: Current relations: [+ lvp_relation : relationships +] ?]
+Current relations: [+ pld_relation : relationships +]
 
-[? if kvp_formed: <span style="color: #0087DC;">**KVP**</span> - <i>Konservative Volkspartei</i> (Conservative People's Party) - a moderate right-wing conservative nationalist party, supported by rural workers, former aristocracy, landowners and conservative Lutherans. The party seeks to emulate the <span style="color: #0087DC;">Tory</span> conservatives in <span style="color: #C8102E;">Great Britain</span>. ?]
+<span style="color: #6D3177;">**UKIP**</span> - *United Kingdom Independence Party* - a right-wing populist party founded in opposition to UK membership of the EU. In recent years it has sought to siphon off votes from the <span style="color: #0087DC;">**Conservatives**</span> by adopting right-wing policies on wider issues such as immigration, taxation and opposition to environmentalism. Under FPTP they have yet to gain a single parliamentary seat, despite a larger share of the national vote than the SNP at the 2005 general election, where the SNP won 6 seats.
 
-[? if kvp_formed: Current relations: [+ kvp_relation : relationships +] ?]
+Current relations: [+ ukip_relation : relationships +]
 
-[? if not cvp_formed: <span style="color: #3E88B3;">**DNVP**</span> - <i>Deutschnationale Volkspartei</i> (German National People's Party) - a right-wing nationalist-conservative party, with authoritarian, monarchist, and racist elements. It is supported by the former aristocracy, rural landowners, and conservative Lutherans. [? if dnvp_dvp_formed: They have recently merged with the <span style="color: #C0A054;">**DVP**</span>. ?]?]
+<span style="color: #02A95B;">**Greens**</span> - *Green Party* - a left-wing party focused primarily on environmental issues. Under FPTP they have yet to gain a single parliamentary seat.
 
-[? if not cvp_formed: Current relations: [+ dnvp_relation : relationships +]?]
+Current relations: [+ grn_relation : relationships +]
 
-[? if dnf_formed: <span style="color: #003755;">**DNF**</span> - <i>Deutschnationale Front</i> (German National Front) - a far-right nationalist-conservative party, led by Alfred Hugenberg, originally split from the <span style="color: #3E88B3;">**DNVP**</span>. It is supported by a small but loyal base of Hugenberg supporters, consisting of former aristocrats, racists and nationalists. ?]
+<span style="color: #2e3b74;">**BNP**</span> - *British National Party* - a far-right party with fascist origins. Under the leadership of Nick Griffin it has sort to present a slightly more moderate guise, while critics argue it remains a fundamentally fascist organization. Under FPTP they have yet to gain a single parliamentary seat.
 
-[? if dnf_formed: Current relations: [+ dnf_relation : relationships +] ?]
+Current relations: [+ bnp_relation : relationships +]
 
-<span style="color: #700000;">**KPD**</span> - *Kommunistische Partei Deutschlands* (German Communist Party) - a radical left-wing offshoot of the <span style="color: #FFC000;">**Lib Dems**</span> that emerged in the aftermath of the German Revolution of 1918, they follow the path of Moscow, opposing parliamentary democracy in favor of a <span style="color: #750e0e;">Soviet</span>-style revolution.
+**Northern Ireland** - Northern Irish politics is still largely overshadowed by the Troubles, with major party leaders having historical ties to the conflict in both the political and paramilitary spheres. The Good Friday agreement may have brought relative peace to the Six Counties, but deep wounds may yet be re-opened. (Detailed systems should be implemented eventually).
 
-Current relations: [+ kpd_relation : relationships +]
-
-[? if sapd_formed: <span style="color: #9B0000;">**SAPD**</span> - <i>Sozialistische Arbeiterpartei Deutschlands</i> (Socialist Worker's Party of Germany) - a party recently formed in a split from the <span style="color: #FFC000;">**Lib Dems**</span>, the <span style="color: #9B0000;">**SAPD**</span> is essentially an agglomeration of various left-wing splinter groups between the <span style="color: #FFC000;">**Lib Dems**</span> and <span style="color: #700000;">**KPD**</span>. ?]
-
-<span style="color: #7A3C00;">**NSDAP**</span> - *Nationalsozialistische Deutsche Arbeiterpartei* - (National Socialist German Worker's Party, or <span style="color: #7A3C00;">Nazis</span>) - a far-right nationalist and antisemitic party. Led by Adolf Hitler, they attempted a coup in 1923, and were banned for it, but have since been legalized.
-
-Current relations: [+ nsdap_relation : relationships +]
-
-**Other parties** - there is a multitude of small, mostly conservative parties, such as the Economic Party of the German Middle Class, the Farmer's Party, the Agricultural League, and others. [? if dnvp_split == 1: They also consist of splinter parties from the <span style="color: #3E88B3;">**DNVP**</span>, as a result of Hugenberg's radical right policies as chairman. ?]Their political position usually lies between the [? if (dvp_exist and not lvp_formed) or not started: <span style="color: #C0A054;">**DVP**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?][? if not dvp_exist and started: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?] and the [? if not cvp_formed: <span style="color: #3E88B3;">**DNVP**</span>?][? if cvp_formed: <span style="color: #003755;">**DNF**</span>?].
+**Other parties** - Many smaller parties exist, as well as independent candidates, but these are not modelled as of yet.
 
 @paramilitaries
 on-arrival: {!
